@@ -13,9 +13,9 @@ public class Golosovanie {
 		int z = sc.nextInt();
 		
 		if (v.elect(x, y, z) == true) {
-			System.out.println(1 + " = " + v.elect(x, y, z));
+			System.out.println(1);
 		}
-		else System.out.println(0 + " = " + v.elect(x, y, z));
+		else System.out.println(0);
 	}
 
 }
@@ -24,15 +24,11 @@ class Vyborka {
 	boolean elect (int x, int y, int z) {
 	int t = 0, f = 0; 
 	boolean rez;	
+	for (int i = 1; i < 4; i++) {
 	if (x == 1) {
 		t++;
 	} else f++;
-	if (y == 1) {
-		t++;
-	} else f++;
-	if (z == 1) {
-		t++;
-	} else f++;
+	}
 	if (t > f) {
 		rez = true;
 	} else rez = false;
