@@ -1,10 +1,10 @@
 package Func;
 import java.util.*;
 
-public class Golosovanie {
+public class ChekNum {
 	public static void main (String[] args) {
 		
-		Vyborka v = new Vyborka();
+		Check ch = new Check();
 				
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter x, y, z (1 or 0): ");
@@ -20,14 +20,15 @@ public class Golosovanie {
 
 }
 
-class Vyborka {
-	boolean elect (int x, int y, int z) {
-	int rez = x + y + z;
-	if (rez >= 2) {
-		return true;
+class Check {
+	int prime (int n) {
+	int temp = 0; 
+	for (int i = 2; i <= n/2; i+=2) {
+		temp = n % i;
+		if (temp == 0) {
+			
 		}
-	else {
-		return false;
-		}
+			
+	return ** ;
 	}
 }
